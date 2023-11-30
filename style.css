@@ -7,4 +7,29 @@
 
 h1 {
   text-align: center;
+  font-size: 4rem;
+}
+
+.get-meal-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+img {
+  height: 40vh;
+  margin: auto;
+  justify-content: center;
+}
+
+.measurements-ingredients-container {
+  display: flex;
+  gap: 5px;
+  margin: 20px 20px;
+}
+
+.measurements, .ingredients {
+  list-style: none;
 }
