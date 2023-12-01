@@ -5,11 +5,12 @@
   .then(res => res.json()) // parse response as JSON
   .then(data => {
     console.log(data)
+    console.log(Object.values(data.meals[0]));
     document.querySelector('#meal-name').innerText = data.meals[0].strMeal;
     document.querySelector('#meal-category').innerText = data.meals[0].strCategory;
     document.querySelector('img').src = data.meals[0].strMealThumb;
     document.querySelector('a').href = data.meals[0].strSource;
-    console.log(Object.values(data.meals[0]));
+    
     let mealsArr = Object.values(data.meals[0])
     for(let i = 29; i <= 48; i++) {
       const li = document.createElement('li');
@@ -22,6 +23,7 @@
       document.querySelector('#ingredients').appendChild(li);
     }
 
+    document.querySelector('#directions').innerText = data.meals[0].strInstructions
 
   })
   .catch(err => {

@@ -8,24 +8,46 @@
 </head>
 <body>
 
-  <h1>Meal Ideas</h1>
+  <header class="header">
+    <h1>Meal Ideas</h1>
+    <div class="get-meal-container">
+      <p>Find a meal idea for me!</p>
+      <button>Get Meal</button>
+    </div>
+  </header>
 
-  <div class="get-meal-container">
-    <p>Find a meal idea for me!</p>
-    <button>Get Meal</button>
-  </div>
+  <main class="main-container">
 
-  <h2 id="meal-name">Meal Name</h2>
-  <h3 id="meal-category">Category</h3>
-  <img src="">
+    <section class="name-category-section">
+      <h2 id="meal-name">Meal Name</h2>
+      <h3 id="meal-category">Category</h3>
+      
+    </section>
 
-  <h3>Ingredients</h3>
-  <div class="measurements-ingredients-container">
-    <ul id="measurements" class="measurements"></ul>
-    <ul id="ingredients" class="ingredients"></ul>
-  </div>
-  <a href="" target="_blank"><button>Go to recipe</button></a>
+    <section class="image-full-recipe-section">
+      <div class="img"><img src=""></div>
 
+      <div class="full-recipe-container">
+        <div class="ingredients-container">
+          <h3>Ingredients</h3>
+          <div class="measurements-ingredients-container">
+            <ul id="measurements" class="measurements"></ul>
+            <ul id="ingredients" class="ingredients"></ul>
+          </div>
+        </div>
+        <div class="directions-container">
+          <h3>Directions</h3>
+          <p id="directions" class="directions"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipe-source-section">
+      <a href="" target="_blank">Go to recipe</a>
+    </section>
+  </main>
+
+  <footer>© 2023 Kate Lynner</footer>
   
 <script src="index.js"></script>
 </body>
