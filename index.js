@@ -1,3 +1,6 @@
+document.querySelector("#button").addEventListener("click", function() {
+  location.reload();
+});
 
   const url = "https://www.themealdb.com/api/json/v1/1/random.php"
 
@@ -30,21 +33,5 @@
       console.log(`error ${err}`)
   });
 
-  // data.subclasses.forEach(obj => {
-  //   console.log(obj.name)
-  //   const li = document.createElement('li');
-  //   li.textContent = obj.name;
-  //   document.querySelector('ul').appendChild(li);
-  // })
 
-  // const url = "https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast"
 
-  // fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast")
-  // .then(res => res.json()) // parse response as JSON
-  // .then(data => {
-  //   console.log(data)
-    
-  // })
-  // .catch(err => {
-  //     console.log(`error ${err}`)
-  // });
